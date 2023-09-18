@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export default function Home() {
 	return (
 		<main className={`flex min-h-screen flex-col items-center justify-between p-24`}>
+			{/* If you disable loop, work fine, or change slidesPerView to number  < 3 */}
+      {/* If you reduce quantity of images, work fine too */}
 			<Swiper modules={[Navigation, Pagination, Autoplay]} slidesPerView={3} autoplay loop pagination navigation className="py-5 px-1 w-full">
 				<SwiperSlide>
 					<img src=" https://fakeimg.pl/600x400/4924ff/909090?text=1" className="!max-w-full" />
